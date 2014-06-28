@@ -1,0 +1,111 @@
+graph kalug_genealogy { 
+
+  "1998 Lloyd" -- {
+    "1999 白勝文"
+    "1999 chihchun"
+    "2001 netman"
+    "2004 paar"
+    "2006 DIY"
+    "2006 郭朝益"
+    "2006 曼特寧老師"
+  }
+
+  "1998 fang 大哥" -- "1998 BlueT"
+
+  "2002 Kevin" -- {
+    "2003 or 2004 Tsung"
+    "2005 Tyson"
+    "2005 hychen"
+  }
+
+  "1998 BlueT" -- {
+    "2005 qerter"
+    "2005 Mat"
+  }
+
+  "1999 shawn" -- "2000 曾羣偉老師" -- "2008 凍仁翔 (chusiang)" -- "2008 Toomore"
+  "1999 chihchun" -- "2006 silice"
+  "2005 lightwind" -- "2006 ajneok"
+  "2005 qerter" -- "2009 Aminzai"
+
+  subgraph cluster_wahoo {
+
+    label = "網虎"
+
+    "1998 Lloyd" -- { 
+      "1998 小蟲"
+      "1998 lman 朱"
+      "1998 Tony"
+      "1998 fang 大哥"
+    }
+
+    "1998 lman 朱" -- {
+      "2002 Tim Chen"
+      "2002 Kevin"
+    }
+
+    "1998 Tony" -- "2002 Kevin"
+    "1999 bryant" -- "2005 Amin"
+    "2002 Kevin" -- "1999 bryant"
+  }
+
+
+  subgraph cluster_1st {
+
+    label = "傳說中的傳說，第一代 1999"
+
+    "深源科技 徐老師"
+    "1998 BlueT"
+    "David"
+    "中山大學 TWCERT, CDPA"
+    "高雄縣資教中心"
+    "高醫老師"
+    "秦維"
+    "1999 白勝文"
+    "1999 洪朝貴"
+  }
+
+  subgraph cluster_sa {
+
+    label = "SA"
+
+    "2001 netman" -- "2007 billy3321" -- {
+      "2008 CYJ"
+      "2009 mr.moneyc"
+    }
+    "2009 Aminzai"
+  }
+
+  subgraph cluster_nuk {
+
+    label = "NUK"
+
+    "2005 qerter" -- {
+      "2005 louislalala"
+      "2007 goodfifagun"
+    }
+  }
+
+  subgraph cluster_kuas {
+
+    label = "KUAS"
+
+    "1999 shawn" -- "before 2005 小辛"
+    "2001 yurenju" -- "2005 bill in"
+
+    subgraph cluster_kuasccna {
+
+      label = "KUAS CCNA"
+
+      "1999 chihchun" -- "1999 shawn" -- {
+        "2001 merk"
+        "2003 snowwolf"
+        "2005 lightwind"
+      }
+
+      "2001 merk" -- "2001 yurenju" -- "2005 hychen"
+      "2005 lightwind" -- "2005 狗狗"
+    }
+  }
+
+}
