@@ -23,10 +23,16 @@ graph kalug_genealogy {
     "2005 Mat"
   }
 
-  "1999 shawn" -- "2000 曾羣偉老師" -- "2008 凍仁翔 (chusiang)" -- "2008 Toomore"
+  "1999 shawn" -- "2000 曾羣偉老師" -- "2008 凍仁翔 (chusiang)"
   "1999 chihchun" -- "2006 silice"
   "2005 lightwind" -- "2006 ajneok"
   "2005 qerter" -- "2009 Aminzai"
+  "2008 凍仁翔 (chusiang)" -- {
+    "2008 Toomore"
+    "2010 日落 (Zeroplex)"
+    "2015 Yu-Cheng Tsai"
+  }
+  "2008 CYJ" -- "2015 Singing"
 
   subgraph cluster_wahoo {
 
